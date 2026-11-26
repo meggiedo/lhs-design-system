@@ -1,0 +1,100 @@
+/*
+ * Longhorn Studies design tokens.
+ * Source of truth: Figma "LHS Design System" variables and styles.
+ * Names match Figma: "text/primary" in Figma is --color-text-primary here.
+ */
+:root {
+  /* ---------- Primitives ---------- */
+  --base-white: #ffffff;
+  --orange-50: #fff4eb;  --orange-100: #fce4d0; --orange-200: #f7c49c; --orange-300: #ee9e5f; --orange-400: #de7a2c;
+  --orange-500: #bf5700; --orange-600: #a34a00; --orange-700: #8a3f00; --orange-800: #6e3200; --orange-900: #4f2400;
+  --slate-50: #f8fafc;   --slate-100: #f1f3f6;  --slate-200: #e2e6eb;  --slate-300: #bac1cc;  --slate-400: #94a3b8;
+  --slate-500: #64748b;  --slate-600: #4f5b66;  --slate-700: #3e4a54;  --slate-800: #333f48;  --slate-900: #1a2024;
+  --limestone-100: #f5f4f0; --limestone-200: #eae8e1; --limestone-300: #d6d2c4;
+  --green-100: #e8f3e4; --green-500: #579d42; --green-700: #3b7a2a;
+  --amber-100: #fef0dc; --amber-500: #f8971f; --amber-700: #945400;
+  --red-100: #fce9ec;   --red-500: #d10000;   --red-700: #a80000;
+
+  /* ---------- Semantic colors ---------- */
+  --color-text-primary: var(--slate-800);
+  --color-text-secondary: var(--slate-500);
+  --color-text-disabled: var(--slate-400);
+  --color-text-brand: var(--orange-500);
+  --color-text-brand-strong: var(--orange-700);
+  --color-text-on-brand: var(--base-white);
+  --color-text-on-inverse: var(--base-white);
+  --color-icon-primary: var(--slate-800);
+  --color-icon-secondary: var(--slate-500);
+  --color-icon-brand: var(--orange-500);
+  --color-bg-page: var(--base-white);
+  --color-bg-surface: var(--base-white);
+  --color-bg-subtle: var(--slate-50);
+  --color-bg-brand: var(--orange-500);
+  --color-bg-brand-subtle: var(--orange-50);
+  --color-bg-warm: var(--limestone-100);
+  --color-bg-inverse: var(--slate-900);
+  --color-border-default: var(--slate-300);
+  --color-border-subtle: var(--slate-200);
+  --color-border-strong: var(--slate-400);
+  --color-border-brand: var(--orange-500);
+  --color-action-primary: var(--orange-500);
+  --color-action-primary-pressed: var(--orange-600);
+  --color-action-disabled: var(--slate-100);
+  --color-filter-active-bg: var(--orange-100);
+  --color-filter-active-border: var(--orange-500);
+  --color-filter-active-text: var(--orange-700);
+  --color-saved-bg: var(--limestone-200);
+  --color-saved-icon: var(--orange-500);
+  --color-status-open-text: var(--green-700);
+  --color-status-open-icon: var(--green-500);
+  --color-status-open-bg: var(--green-100);
+  --color-status-closing-text: var(--amber-700);
+  --color-status-closing-icon: var(--amber-700);
+  --color-status-closing-bg: var(--amber-100);
+  --color-status-closed-text: var(--red-500);
+  --color-status-closed-icon: var(--red-500);
+  --color-status-closed-bg: var(--red-100);
+  --color-focus-ring: var(--orange-500);
+  --color-crowd-quiet: var(--green-500);
+  --color-crowd-moderate: var(--amber-500);
+  --color-crowd-busy: var(--red-500);
+  --color-crowd-track: var(--slate-200);
+  --color-rating-star: var(--amber-500);
+  --color-rating-empty: var(--slate-300);
+
+  /* ---------- Spacing (Figma: Properties / spacing) ---------- */
+  --spacing-1: 2px;
+  --spacing-2: 4px;
+  --spacing-3: 8px;
+  --spacing-4: 12px;
+  --spacing-5: 16px;
+  --spacing-6: 20px;
+  --spacing-7: 24px;
+  --spacing-8: 32px;
+
+  /* ---------- Radius (Figma: Properties / radius) ---------- */
+  --radius-2: 8px;
+  --radius-3: 16px;
+  --radius-4: 32px;
+
+  /* ---------- Elevation (Figma effect styles) ---------- */
+  --elevation-card: 0 2px 12px rgba(51, 64, 71, 0.10);
+  --elevation-floating: 0 4px 16px rgba(51, 64, 71, 0.14);
+
+  /* ---------- Typography (Figma text styles, Figtree) ---------- */
+  --font-family: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Text styles as classes. Usage: <p class="lhs-body-medium-strong"> */
+.lhs-heading-large   { font: 700 28px/36px var(--font-family); }
+.lhs-heading-medium  { font: 700 23px/28px var(--font-family); }
+.lhs-heading-small   { font: 700 19px/24px var(--font-family); }
+.lhs-body-large        { font: 400 16px/22px var(--font-family); }
+.lhs-body-large-strong { font: 600 16px/22px var(--font-family); }
+.lhs-body-large-heavy  { font: 700 16px/22px var(--font-family); }
+.lhs-body-medium        { font: 400 13px/18px var(--font-family); }
+.lhs-body-medium-strong { font: 600 13px/18px var(--font-family); }
+.lhs-body-medium-heavy  { font: 700 13px/18px var(--font-family); }
+.lhs-body-small        { font: 400 12px/16px var(--font-family); }
+.lhs-body-small-strong { font: 600 12px/16px var(--font-family); }
+.lhs-body-small-heavy  { font: 700 12px/16px var(--font-family); }

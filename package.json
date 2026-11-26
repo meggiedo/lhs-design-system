@@ -1,0 +1,27 @@
+{
+  "name": "lhs-design-system",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Longhorn Studies design system: tokens and components, shown in Storybook.",
+  "type": "module",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build -o storybook-static"
+  },
+  "dependencies": {
+    "@fontsource/figtree": "5.2.10",
+    "@phosphor-icons/react": "2.1.10",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "10.6.9",
+    "@storybook/react-vite": "10.6.9",
+    "@types/react": "19.3.3",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "storybook": "10.6.9",
+    "typescript": "~5.9.3",
+    "vite": "8.3.8"
+  }
+}
